@@ -7,9 +7,9 @@ dependencies:
   module:
     - system
   theme:
-    - artemis_bootstrap
-id: artemis_bootstrap_piedepagina
-theme: artemis_bootstrap
+    - template_bootstrap
+id: template_bootstrap_piedepagina
+theme: template_bootstrap
 region: footer_fifth
 weight: -6
 provider: null

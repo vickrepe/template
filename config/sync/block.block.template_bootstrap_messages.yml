@@ -5,9 +5,9 @@ dependencies:
   module:
     - system
   theme:
-    - artemis_bootstrap
-id: artemis_bootstrap_messages
-theme: artemis_bootstrap
+    - template_bootstrap
+id: template_bootstrap_messages
+theme: template_bootstrap
 region: highlighted
 weight: 0
 provider: null

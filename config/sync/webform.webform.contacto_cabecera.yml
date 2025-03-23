@@ -249,7 +249,7 @@ handlers:
       return_path: ''
       sender_mail: ''
       sender_name: ''
-      subject: 'Artemis: Solicitud de contacto'
+      subject: 'Template: Solicitud de contacto'
       body: '<p>Solicitud recibida a través del formulario de contacto</p><p><strong>Datos del formulario:</strong></p><p>[webform_submission:values]</p>'
       excluded_elements: {  }
       ignore_access: false
@@ -286,7 +286,7 @@ handlers:
       return_path: ''
       sender_mail: ''
       sender_name: ''
-      subject: 'Artemis: Solicitud de contacto'
+      subject: 'Template: Solicitud de contacto'
       body: '<p>Solicitud recibida a través del formulario de contacto</p><p><strong>Datos del formulario:</strong></p><p>[webform_submission:values]</p>'
       excluded_elements:
         hero_titulo: hero_titulo

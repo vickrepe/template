@@ -15,8 +15,8 @@ third_party_settings:
     enable_cart_message: true
   commerce_checkout:
     checkout_flow: default
-id: artemis
-label: Artemis
+id: template
+label: Template
 traits: {  }
 locked: false
 workflow: order_default

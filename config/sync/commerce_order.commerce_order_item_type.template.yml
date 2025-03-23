@@ -7,9 +7,9 @@ dependencies:
 third_party_settings:
   commerce_tax:
     taxable_type: services
-id: artemis
-label: Artemis
+id: template
+label: Template
 traits: {  }
 locked: false
 purchasableEntityType: commerce_product_variation
-orderType: artemis
+orderType: template

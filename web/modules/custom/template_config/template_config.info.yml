@@ -1,4 +1,4 @@
-name: 'Artemis Config'
+name: 'Template Config'
 type: module
 description: 'Módulo para personalizar configuraciones en Drupal'
 core_version_requirement: ^10

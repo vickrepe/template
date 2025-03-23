@@ -7,9 +7,9 @@ dependencies:
   module:
     - system
   theme:
-    - artemis_bootstrap
-id: artemis_bootstrap_menutop
-theme: artemis_bootstrap
+    - template_bootstrap
+id: template_bootstrap_menutop
+theme: template_bootstrap
 region: top_header_form
 weight: -6
 provider: null

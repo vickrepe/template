@@ -5,9 +5,9 @@ dependencies:
   module:
     - commerce_checkout
   theme:
-    - artemis_bootstrap
-id: artemis_bootstrap_checkoutprogress
-theme: artemis_bootstrap
+    - template_bootstrap
+id: template_bootstrap_checkoutprogress
+theme: template_bootstrap
 region: content
 weight: -3
 provider: null

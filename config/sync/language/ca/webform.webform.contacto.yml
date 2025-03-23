@@ -20,9 +20,9 @@ settings:
 handlers:
   email:
     settings:
-      subject: 'Artemis: Sol·licitud de contacte'
+      subject: 'Template: Sol·licitud de contacte'
       body: '<p>Sol·licitud rebuda a través del formulari de contacte</p><p><strong>Dades del formulari:</strong></p><p>[webform_submission:values]</p>'
   email_1:
     settings:
-      subject: 'Artemis: Sol·licitud de contacte'
+      subject: 'Template: Sol·licitud de contacte'
       body: '<p>Sol·licitud rebuda a través del formulari de contacte</p><p><strong>Dades del formulari:</strong></p><p>[webform_submission:values]</p>'

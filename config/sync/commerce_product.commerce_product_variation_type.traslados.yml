@@ -6,5 +6,5 @@ id: traslados
 label: Traslados
 traits: {  }
 locked: false
-orderItemType: artemis
+orderItemType: template
 generateTitle: false
