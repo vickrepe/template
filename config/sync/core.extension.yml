@@ -2,6 +2,7 @@ _core:
   default_config_hash: 4GIX5Esnc_umpXUBj4IIocRX7Mt5fPhm4AgXfE3E56E
 langcode: es
 module:
+  minimal: 0
   address: 0
   admin_toolbar: 0
   admin_toolbar_tools: 0
@@ -143,11 +144,10 @@ module:
   externalauth: 10
   views: 10
   paragraphs: 11
-  standard: 1000
   eu_cookie_compliance: 1001
 theme:
   olivero: 0
   claro: 0
   bootstrap_barrio: 0
   template_bootstrap: 0
-profile: standard
+profile: minimal
