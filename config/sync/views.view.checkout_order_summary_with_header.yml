@@ -25,7 +25,7 @@ id: checkout_order_summary_with_header
 label: 'Checkout order summary with header'
 module: views
 description: ''
-tag: artemis_custom_order_summary
+tag: template_custom_order_summary
 base_table: commerce_order
 base_field: order_id
 display:

@@ -5,9 +5,9 @@ dependencies:
   module:
     - language
   theme:
-    - artemis_bootstrap
-id: artemis_bootstrap_languageswitcher
-theme: artemis_bootstrap
+    - template_bootstrap
+id: template_bootstrap_languageswitcher
+theme: template_bootstrap
 region: top_header_form
 weight: 0
 provider: null

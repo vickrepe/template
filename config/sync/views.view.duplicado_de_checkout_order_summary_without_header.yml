@@ -23,7 +23,7 @@ id: duplicado_de_checkout_order_summary_without_header
 label: 'Checkout order summary without header'
 module: views
 description: ''
-tag: artemis_custom_order_summary
+tag: template_custom_order_summary
 base_table: commerce_order
 base_field: order_id
 display:

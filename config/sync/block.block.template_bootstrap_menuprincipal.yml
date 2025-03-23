@@ -7,9 +7,9 @@ dependencies:
   module:
     - system
   theme:
-    - artemis_bootstrap
-id: artemis_bootstrap_menuprincipal
-theme: artemis_bootstrap
+    - template_bootstrap
+id: template_bootstrap_menuprincipal
+theme: template_bootstrap
 region: primary_menu
 weight: 0
 provider: null

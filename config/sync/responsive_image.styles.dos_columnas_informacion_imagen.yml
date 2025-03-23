@@ -6,7 +6,7 @@ dependencies:
     - image.style.dos_columnas_informacion_imagen_escritorio
     - image.style.dos_columnas_informacion_imagen_movil
   theme:
-    - artemis_bootstrap
+    - template_bootstrap
 id: dos_columnas_informacion_imagen
 label: 'Dos columnas Información + Imagen'
 image_style_mappings:
@@ -16,7 +16,7 @@ image_style_mappings:
       sizes: 100vw
       sizes_image_styles:
         - dos_columnas_informacion_imagen_escritorio
-    breakpoint_id: artemis_bootstrap.large
+    breakpoint_id: template_bootstrap.large
     multiplier: 1x
   -
     image_mapping_type: sizes
@@ -24,7 +24,7 @@ image_style_mappings:
       sizes: 100vw
       sizes_image_styles:
         - dos_columnas_informacion_imagen_movil
-    breakpoint_id: artemis_bootstrap.medium
+    breakpoint_id: template_bootstrap.medium
     multiplier: 1x
-breakpoint_group: artemis_bootstrap
+breakpoint_group: template_bootstrap
 fallback_image_style: '_original image_'

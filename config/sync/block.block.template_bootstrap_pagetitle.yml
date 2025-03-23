@@ -5,9 +5,9 @@ dependencies:
   module:
     - system
   theme:
-    - artemis_bootstrap
-id: artemis_bootstrap_pagetitle
-theme: artemis_bootstrap
+    - template_bootstrap
+id: template_bootstrap_pagetitle
+theme: template_bootstrap
 region: content
 weight: -4
 provider: null

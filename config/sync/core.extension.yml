@@ -6,7 +6,7 @@ module:
   admin_toolbar: 0
   admin_toolbar_tools: 0
   announcements_feed: 0
-  artemis_config: 0
+  template_config: 0
   automated_cron: 0
   ban: 0
   better_exposed_filters: 0
@@ -149,5 +149,5 @@ theme:
   olivero: 0
   claro: 0
   bootstrap_barrio: 0
-  artemis_bootstrap: 0
+  template_bootstrap: 0
 profile: standard

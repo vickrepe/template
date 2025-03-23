@@ -6,5 +6,5 @@ id: paquete
 label: Paquete
 traits: {  }
 locked: false
-orderItemType: artemis
+orderItemType: template
 generateTitle: false

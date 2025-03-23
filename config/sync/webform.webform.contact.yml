@@ -60,7 +60,7 @@ elements: |-
   tratamiento_mkt:
     '#type': checkbox
     '#title': 'Tratamiento marketing'
-    '#description': '<p>Autorizo a que Artemis trate mis datos personales con fines de marketing para comunicarme servicios, productos y novedades de la compañía y otras noticias que puedan ser de mi interés por cualquier medio, incluidos medios electrónicos.</p>'
+    '#description': '<p>Autorizo a que Template trate mis datos personales con fines de marketing para comunicarme servicios, productos y novedades de la compañía y otras noticias que puedan ser de mi interés por cualquier medio, incluidos medios electrónicos.</p>'
   tratamiento_preferencias:
     '#type': checkbox
     '#title': 'Tratamiento preferencias'
@@ -285,7 +285,7 @@ handlers:
       return_path: ''
       sender_mail: ''
       sender_name: ''
-      subject: 'Artemis: Solicitud de contacto'
+      subject: 'Template: Solicitud de contacto'
       body: '<p>Solicitud recibida a través del formulario de contacto</p><p><strong>Datos del formulario:</strong></p><p>[webform_submission:values]</p>'
       excluded_elements: {  }
       ignore_access: false
@@ -322,7 +322,7 @@ handlers:
       return_path: ''
       sender_mail: ''
       sender_name: ''
-      subject: 'Artemis: Solicitud de contacto'
+      subject: 'Template: Solicitud de contacto'
       body: '<p>Solicitud recibida a través del formulario de contacto</p><p><strong>Datos del formulario:</strong></p><p>[webform_submission:values]</p>'
       excluded_elements:
         processed_text: processed_text
@@ -363,7 +363,7 @@ handlers:
       return_path: ''
       sender_mail: ''
       sender_name: ''
-      subject: 'Artemis: Solicitud de contacto'
+      subject: 'Template: Solicitud de contacto'
       body: '<p>Solicitud recibida a través del formulario de contacto</p><p><strong>Datos del formulario:</strong></p><p>[webform_submission:values]</p>'
       excluded_elements:
         processed_text: processed_text
