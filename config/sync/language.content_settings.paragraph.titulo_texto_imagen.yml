@@ -1,0 +1,18 @@
+uuid: 83a7476d-4168-4fcb-bc66-8420b8f2189d
+langcode: es
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.titulo_texto_imagen
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: paragraph.titulo_texto_imagen
+target_entity_type_id: paragraph
+target_bundle: titulo_texto_imagen
+default_langcode: site_default
+language_alterable: false

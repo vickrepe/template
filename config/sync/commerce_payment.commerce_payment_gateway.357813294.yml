@@ -1,0 +1,31 @@
+uuid: 01a745db-f03d-4def-97c2-4604284baa07
+langcode: es
+status: true
+dependencies:
+  module:
+    - commerce_sermepa
+id: '357813294'
+label: '357813294'
+weight: -10
+plugin: commerce_sermepa
+configuration:
+  display_label: Bizum
+  mode: test
+  payment_method_types:
+    - 'Tarjeta de crédito'
+  collect_billing_information: true
+  merchant_name: '357813294'
+  merchant_code: '357813294'
+  merchant_group: ''
+  merchant_password: sq7HjrUOBfKmC576ILgskD5srU870gJ7
+  merchant_terminal: '002'
+  merchant_paymethods:
+    z: z
+  merchant_consumer_language: '000'
+  currency: 978
+  transaction_type: '0'
+  instructions:
+    value: ''
+    format: plain_text
+conditions: {  }
+conditionOperator: AND

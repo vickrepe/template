@@ -1,0 +1,21 @@
+uuid: 68db597d-3b78-43be-b07c-4b300d6a184b
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_faq_selector_hn
+    - paragraphs.paragraphs_type.preguntas_frecuentes
+  module:
+    - options
+id: paragraph.preguntas_frecuentes.field_faq_selector_hn
+field_name: field_faq_selector_hn
+entity_type: paragraph
+bundle: preguntas_frecuentes
+label: 'Selector Hn'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

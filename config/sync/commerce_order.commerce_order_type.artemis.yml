@@ -1,0 +1,28 @@
+uuid: 372d2ba9-be61-427c-bfa1-23dbadac78b7
+langcode: es
+status: true
+dependencies:
+  module:
+    - commerce_cart
+    - commerce_checkout
+third_party_settings:
+  commerce_cart:
+    cart_block_view: commerce_cart_block
+    cart_form_view: commerce_cart_form
+    cart_expiration:
+      number: 3
+      unit: month
+    enable_cart_message: true
+  commerce_checkout:
+    checkout_flow: default
+id: artemis
+label: Artemis
+traits: {  }
+locked: false
+workflow: order_default
+numberPattern: null
+refresh_mode: customer
+refresh_frequency: 300
+sendReceipt: true
+receiptBcc: ''
+receiptSubject: ''

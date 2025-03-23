@@ -1,0 +1,23 @@
+uuid: f141292c-6ee6-423d-b72b-2c8f345acb21
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - artemis_bootstrap
+id: artemis_bootstrap_marcadelsitio
+theme: artemis_bootstrap
+region: header
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Marca del sitio'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: false
+  use_site_slogan: false
+visibility: {  }

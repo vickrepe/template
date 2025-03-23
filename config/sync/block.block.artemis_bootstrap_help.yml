@@ -1,0 +1,20 @@
+uuid: 4d557cee-8597-4358-8328-fb2c12355b93
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - artemis_bootstrap
+id: artemis_bootstrap_help
+theme: artemis_bootstrap
+region: highlighted
+weight: 0
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

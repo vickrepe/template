@@ -1,0 +1,23 @@
+uuid: 64a4ebef-bdbd-4288-b7fa-6b1e167c601f
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_defuncion
+    - profile.type.customer
+id: profile.customer.field_defuncion
+field_name: field_defuncion
+entity_type: profile
+bundle: customer
+label: '*Confirmo que ya se ha producido la defunción.'
+description: 'El servicio sólo se podrá contratar en caso de que la persona ya haya fallecido. Para consultas previas a la defunción, <a href="/contacto">contáctanos</a>.'
+required: true
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

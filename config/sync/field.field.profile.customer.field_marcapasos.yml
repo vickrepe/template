@@ -1,0 +1,23 @@
+uuid: 084ce46c-4147-4103-9be1-28a04f8734d2
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_marcapasos
+    - profile.type.customer
+id: profile.customer.field_marcapasos
+field_name: field_marcapasos
+entity_type: profile
+bundle: customer
+label: 'OLD¿La persona fallecida lleva marcapasos?'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Sí
+  off_label: 'No'
+field_type: boolean

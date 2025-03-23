@@ -1,0 +1,21 @@
+uuid: 4ac91d91-6c7b-47f5-b9b3-c32480390449
+langcode: es
+status: true
+dependencies:
+  module:
+    - commerce_product
+    - entity_reference_revisions
+    - paragraphs
+id: commerce_product.field_servicios
+field_name: field_servicios
+entity_type: commerce_product
+type: entity_reference_revisions
+settings:
+  target_type: paragraph
+module: entity_reference_revisions
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

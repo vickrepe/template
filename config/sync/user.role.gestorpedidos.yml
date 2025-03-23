@@ -1,0 +1,41 @@
+uuid: a1bf3120-2693-4cce-bcf3-40964c2f9b38
+langcode: es
+status: true
+dependencies:
+  module:
+    - commerce
+    - commerce_order
+    - commerce_payment
+    - commerce_product
+    - commerce_promotion
+    - eu_cookie_compliance
+    - profile
+    - shortcut
+    - system
+    - toolbar
+    - webform
+id: gestorpedidos
+label: GestorPedidos
+weight: 6
+is_admin: null
+permissions:
+  - 'access any webform configuration'
+  - 'access commerce administration pages'
+  - 'access commerce_order overview'
+  - 'access shortcuts'
+  - 'access toolbar'
+  - 'access webform help'
+  - 'access webform overview'
+  - 'add commerce_log commerce_order admin comment'
+  - 'administer webform submission'
+  - 'display eu cookie compliance popup'
+  - 'view any commerce_payment_method'
+  - 'view any customer profile'
+  - 'view any webform submission'
+  - 'view commerce_order'
+  - 'view commerce_product_attribute'
+  - 'view commerce_promotion'
+  - 'view default commerce_order'
+  - 'view default commerce_product'
+  - 'view paquete commerce_product'
+  - 'view the administration theme'

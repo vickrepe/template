@@ -1,0 +1,21 @@
+uuid: 105d8578-40fd-4caa-9131-efcfae93aaf8
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_tiene_marcapasos
+    - profile.type.customer
+  module:
+    - options
+id: profile.customer.field_tiene_marcapasos
+field_name: field_tiene_marcapasos
+entity_type: profile
+bundle: customer
+label: '¿La persona fallecida lleva marcapasos?'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

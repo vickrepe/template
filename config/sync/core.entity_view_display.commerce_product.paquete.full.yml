@@ -1,0 +1,45 @@
+uuid: cdcfbf69-28dd-4100-862f-5943144b882b
+langcode: es
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.paquete
+    - core.entity_view_mode.commerce_product.full
+    - field.field.commerce_product.paquete.body
+    - field.field.commerce_product.paquete.field_contact_form
+    - field.field.commerce_product.paquete.field_etiqueta
+    - field.field.commerce_product.paquete.field_icono
+    - field.field.commerce_product.paquete.field_imagen
+    - field.field.commerce_product.paquete.field_included
+    - field.field.commerce_product.paquete.field_no_disponible_venta
+    - field.field.commerce_product.paquete.field_servicios
+    - field.field.commerce_product.paquete.field_tipo_paquete
+    - field.field.commerce_product.paquete.field_weight
+  module:
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: commerce_product.paquete.full
+targetEntityType: commerce_product
+bundle: paquete
+mode: full
+content: {  }
+hidden:
+  body: true
+  created: true
+  field_contact_form: true
+  field_etiqueta: true
+  field_icono: true
+  field_imagen: true
+  field_included: true
+  field_no_disponible_venta: true
+  field_servicios: true
+  field_tipo_paquete: true
+  field_weight: true
+  langcode: true
+  stores: true
+  title: true
+  uid: true
+  variations: true

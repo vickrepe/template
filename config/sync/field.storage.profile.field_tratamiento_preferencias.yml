@@ -1,0 +1,18 @@
+uuid: 1db00d03-d2fd-4818-b3ca-3b608fde4ce2
+langcode: es
+status: true
+dependencies:
+  module:
+    - profile
+id: profile.field_tratamiento_preferencias
+field_name: field_tratamiento_preferencias
+entity_type: profile
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

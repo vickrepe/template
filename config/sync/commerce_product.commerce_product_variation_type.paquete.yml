@@ -1,0 +1,10 @@
+uuid: 719f4d47-c705-4a32-8d65-d032dc1d07cb
+langcode: es
+status: true
+dependencies: {  }
+id: paquete
+label: Paquete
+traits: {  }
+locked: false
+orderItemType: artemis
+generateTitle: false

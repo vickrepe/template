@@ -1,0 +1,23 @@
+uuid: 0ea0e774-eee2-475d-8f9f-a5b2305448a6
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - artemis_bootstrap
+id: artemis_bootstrap_sitebranding
+theme: artemis_bootstrap
+region: footer_first
+weight: -7
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: false
+  use_site_slogan: false
+visibility: {  }

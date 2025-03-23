@@ -1,0 +1,23 @@
+uuid: b81a01f9-cc69-4aaa-827d-9814ecd16889
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_tratamiento_preferencias
+    - profile.type.customer
+id: profile.customer.field_tratamiento_preferencias
+field_name: field_tratamiento_preferencias
+entity_type: profile
+bundle: customer
+label: 'Tratamiento preferencias'
+description: 'Asimismo, autoriza que sus datos personales sean tratados con la finalidad de analizar sus preferencias y poder remitirle exclusivamente información que entendemos puede resultar de su interés.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

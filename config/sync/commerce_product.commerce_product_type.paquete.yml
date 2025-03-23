@@ -1,0 +1,14 @@
+uuid: 21fb5dbd-a64c-48f6-a8e3-e85a7f49f68c
+langcode: es
+status: true
+dependencies: {  }
+id: paquete
+label: Paquete
+traits: {  }
+locked: false
+description: ''
+variationType: paquete
+variationTypes:
+  - paquete
+multipleVariations: false
+injectVariationFields: true

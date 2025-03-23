@@ -1,0 +1,21 @@
+uuid: 3bf1550a-aef0-4a3b-acf3-83ca750b51b1
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_icon_selector_hn
+    - paragraphs.paragraphs_type.icono
+  module:
+    - options
+id: paragraph.icono.field_icon_selector_hn
+field_name: field_icon_selector_hn
+entity_type: paragraph
+bundle: icono
+label: 'Selector Hn'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

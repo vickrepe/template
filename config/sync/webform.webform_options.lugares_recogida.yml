@@ -1,0 +1,11 @@
+uuid: 767045e4-e759-42ee-9ff0-932fd27e052c
+langcode: es
+status: true
+dependencies: {  }
+id: lugares_recogida
+label: 'Lugares recogida'
+category: Assessora
+likert: false
+options: |-
+  a: aa
+  2: b2

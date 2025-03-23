@@ -1,0 +1,18 @@
+uuid: 7517b5e3-043d-4646-8227-1d3b66b51968
+langcode: es
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.texo_info_con_modal
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: paragraph.texo_info_con_modal
+target_entity_type_id: paragraph
+target_bundle: texo_info_con_modal
+default_langcode: site_default
+language_alterable: true

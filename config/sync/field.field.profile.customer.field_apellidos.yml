@@ -1,0 +1,19 @@
+uuid: 75dcb017-b2e6-4a76-bb0b-e552f46c55b3
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_apellidos
+    - profile.type.customer
+id: profile.customer.field_apellidos
+field_name: field_apellidos
+entity_type: profile
+bundle: customer
+label: Apellidos
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

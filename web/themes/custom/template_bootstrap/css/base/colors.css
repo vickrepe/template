@@ -1,0 +1,32 @@
+:root {
+  /**Colors**/
+  /*Paleta de colores*/
+  --template-deep-brown: #331810;
+  --template-steel-blue: #2A7193;
+  --template-warm-gray: #6E635D;
+  --template-soft-cream: #EDE0CE;
+  --template-pale-lilac: #EFEDF2;
+
+  /*Backgrounds*/
+  --template-blush-tint: #FCF4F2;
+  --template-ivory-blush: #FCF4F0;
+  --template-light-sand:  #FAF8F5;
+  --template-soft-mist: #F9F8FA;
+  --template-pale-sky: #F4F7F9;
+
+  /*Grayscale*/
+  --template-black: #000000;
+  --template-deep-charcoal: #0F1010;
+  --template-dark-stone: #404345;
+  --template-slate-grey: #585D5F;
+  --template-smoky-grey: #71777A;
+  --template-muted-steel: #8B9093;
+  --template-light-silver: #BFC3C4;
+  --template-soft-cloud: #DADCDD;
+  --template-almost-white: #F4F5F5;
+  --template-white: #ffffff;
+
+  --template-silver-grey: #A5A9AC;
+  --template-light-carbon: #1F262B;
+  --template-cod-grey: #2b2f32;
+}

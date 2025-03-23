@@ -1,0 +1,27 @@
+uuid: e49ffb8b-c2c0-4c08-b2b9-247f5ae9dea7
+langcode: es
+status: true
+dependencies:
+  module:
+    - options
+    - profile
+id: profile.field_tiene_marcapasos
+field_name: field_tiene_marcapasos
+entity_type: profile
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: Sí
+      label: Sí
+    -
+      value: 'No'
+      label: 'No'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

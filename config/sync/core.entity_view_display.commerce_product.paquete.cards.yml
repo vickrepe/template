@@ -1,0 +1,80 @@
+uuid: d46f2bd3-53f9-4cc1-b7ee-734802969854
+langcode: es
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.paquete
+    - core.entity_view_mode.commerce_product.cards
+    - field.field.commerce_product.paquete.body
+    - field.field.commerce_product.paquete.field_contact_form
+    - field.field.commerce_product.paquete.field_etiqueta
+    - field.field.commerce_product.paquete.field_icono
+    - field.field.commerce_product.paquete.field_imagen
+    - field.field.commerce_product.paquete.field_included
+    - field.field.commerce_product.paquete.field_no_disponible_venta
+    - field.field.commerce_product.paquete.field_servicios
+    - field.field.commerce_product.paquete.field_tipo_paquete
+    - field.field.commerce_product.paquete.field_weight
+  module:
+    - layout_builder
+    - text
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: commerce_product.paquete.cards
+targetEntityType: commerce_product
+bundle: paquete
+mode: cards
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_contact_form:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_etiqueta:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_imagen:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  created: true
+  field_icono: true
+  field_included: true
+  field_no_disponible_venta: true
+  field_servicios: true
+  field_tipo_paquete: true
+  field_weight: true
+  langcode: true
+  stores: true
+  uid: true
+  variations: true

@@ -1,0 +1,18 @@
+uuid: 4ad2152a-c26d-41b1-8996-a34bfa972e7b
+langcode: en
+status: true
+dependencies:
+  theme:
+    - artemis_bootstrap
+id: artemis_bootstrap_primaryadminactions
+theme: artemis_bootstrap
+region: content
+weight: -2
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

@@ -1,0 +1,17 @@
+uuid: c894d651-df92-4ba8-b663-481acbb72393
+langcode: es
+status: true
+dependencies:
+  module:
+    - geoblock_maxmind
+title: 'Default cron handler'
+id: geoblock_maxmind_cron
+weight: 0
+module: geoblock_maxmind
+callback: geoblock_maxmind_cron
+scheduler:
+  id: simple
+launcher:
+  id: serial
+logger:
+  id: database

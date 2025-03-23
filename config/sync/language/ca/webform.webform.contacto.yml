@@ -1,0 +1,28 @@
+elements: |
+  titulo_pagina_contacto:
+    '#text': "<h2>Posa't en contacte amb nosaltres</h2>"
+  nombre:
+    '#placeholder': Nom
+  apellidos:
+    '#placeholder': Cognoms
+  prefijo:
+    '#title': Prefix
+  telefono:
+    '#title': Telèfon
+    '#placeholder': 'Telèfon de contacte'
+  descripcion_de_la_consulta:
+    '#title': 'Descripció de la consulta'
+    '#placeholder': 'Descripció de la consulta'
+  actions:
+    '#submit__label': ' Vull més informació'
+settings:
+  confirmation_message: "<h3>Gràcies per contactar-nos.</h3><p>Hem rebut correctament la teva consulta.</p><p>Ens posarem en contacte amb tu en la major brevetat possible. Si necessites assistència immediata, pots telefonar-nos al <strong>900 000 000</strong> i el nostre equip d'assessors t'atendrà personalment.</p>"
+handlers:
+  email:
+    settings:
+      subject: 'Artemis: Sol·licitud de contacte'
+      body: '<p>Sol·licitud rebuda a través del formulari de contacte</p><p><strong>Dades del formulari:</strong></p><p>[webform_submission:values]</p>'
+  email_1:
+    settings:
+      subject: 'Artemis: Sol·licitud de contacte'
+      body: '<p>Sol·licitud rebuda a través del formulari de contacte</p><p><strong>Dades del formulari:</strong></p><p>[webform_submission:values]</p>'

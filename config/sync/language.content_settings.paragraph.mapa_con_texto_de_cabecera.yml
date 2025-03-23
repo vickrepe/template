@@ -1,0 +1,18 @@
+uuid: 4cf9e6f3-561c-4f13-b9b7-3bd3d6ebc4e8
+langcode: es
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.mapa_con_texto_de_cabecera
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: paragraph.mapa_con_texto_de_cabecera
+target_entity_type_id: paragraph
+target_bundle: mapa_con_texto_de_cabecera
+default_langcode: site_default
+language_alterable: true

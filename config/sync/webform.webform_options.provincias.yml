@@ -1,0 +1,9 @@
+uuid: b6031522-c400-4d6f-bbe3-05ee2001be9a
+langcode: es
+status: true
+dependencies: {  }
+id: provincias
+label: Provincias
+category: Assessora
+likert: false
+options: ''

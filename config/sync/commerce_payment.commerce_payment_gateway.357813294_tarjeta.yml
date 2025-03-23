@@ -1,0 +1,31 @@
+uuid: 84d2680a-a911-484a-8705-eec4dc0c1fde
+langcode: es
+status: true
+dependencies:
+  module:
+    - commerce_sermepa
+id: 357813294_tarjeta
+label: 357813294-tarjeta
+weight: -10
+plugin: commerce_sermepa
+configuration:
+  display_label: Tarjeta
+  mode: test
+  payment_method_types:
+    - 'Tarjeta de crédito'
+  collect_billing_information: true
+  merchant_name: '357813294'
+  merchant_code: '357813294'
+  merchant_group: ''
+  merchant_password: sq7HjrUOBfKmC576ILgskD5srU870gJ7
+  merchant_terminal: '001'
+  merchant_paymethods:
+    C: C
+  merchant_consumer_language: '000'
+  currency: 978
+  transaction_type: '0'
+  instructions:
+    value: ''
+    format: plain_text
+conditions: {  }
+conditionOperator: AND

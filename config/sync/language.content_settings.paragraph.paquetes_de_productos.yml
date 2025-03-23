@@ -1,0 +1,18 @@
+uuid: bf753690-155d-44fc-8bb6-e126e2c330ea
+langcode: es
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.paquetes_de_productos
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: paragraph.paquetes_de_productos
+target_entity_type_id: paragraph
+target_bundle: paquetes_de_productos
+default_langcode: site_default
+language_alterable: true

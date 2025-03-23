@@ -1,0 +1,18 @@
+uuid: f2dcb64c-aaf3-4648-b6a9-49d57d343f56
+langcode: es
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.iconos_descripcion
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: paragraph.iconos_descripcion
+target_entity_type_id: paragraph
+target_bundle: iconos_descripcion
+default_langcode: site_default
+language_alterable: true

@@ -1,0 +1,25 @@
+uuid: 3e1a5dbb-cdcb-4c65-8b87-854611615467
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.menu-footer
+  module:
+    - system
+  theme:
+    - artemis_bootstrap
+id: artemis_bootstrap_menufooter
+theme: artemis_bootstrap
+region: footer_second
+weight: -6
+provider: null
+plugin: 'system_menu_block:menu-footer'
+settings:
+  id: 'system_menu_block:menu-footer'
+  label: 'Menú footer'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

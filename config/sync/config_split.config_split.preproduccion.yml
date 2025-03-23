@@ -1,0 +1,18 @@
+uuid: 763387e7-32bc-461d-94e3-6c446ead5e25
+langcode: es
+status: true
+dependencies: {  }
+id: preproduccion
+label: Preproducción
+description: ''
+weight: 0
+stackable: false
+no_patching: false
+storage: folder
+folder: ../config/pre
+module:
+  google_tag: 0
+  gtm: 0
+theme: {  }
+complete_list: {  }
+partial_list: {  }

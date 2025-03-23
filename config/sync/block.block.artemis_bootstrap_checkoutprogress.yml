@@ -1,0 +1,20 @@
+uuid: cede457e-d906-4994-a5a9-0127516bd631
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_checkout
+  theme:
+    - artemis_bootstrap
+id: artemis_bootstrap_checkoutprogress
+theme: artemis_bootstrap
+region: content
+weight: -3
+provider: null
+plugin: commerce_checkout_progress
+settings:
+  id: commerce_checkout_progress
+  label: 'Checkout progress'
+  label_display: '0'
+  provider: commerce_checkout
+visibility: {  }

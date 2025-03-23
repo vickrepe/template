@@ -1,0 +1,12 @@
+elements: |
+  hero_titulo:
+    '#text': '<p>Sol·licita informació</p>'
+  nombre:
+    '#placeholder': Nom
+  telefono:
+    '#placeholder': ' Telèfon de contacte'
+  actions:
+    '#submit__label': ' Vull més informació'
+settings:
+  confirmation_title: 'Gràcies per contactar-nos'
+  confirmation_message: "<h2>Gràcies per contactar-nos.</h2><p>Hem rebut correctament la seva consulta sobre el servei.</p><p>Ens posarem en contacte amb vostè el més aviat possible. Si necessiteu assistència immediata, podeu trucar-nos al <strong>900 000 000</strong> i el nostre equip d'assessors us atendrà personalment.</p>"

@@ -1,0 +1,18 @@
+uuid: e1015e2c-adc8-4041-be50-d46a510b3edb
+langcode: es
+status: true
+dependencies:
+  module:
+    - profile
+id: profile.field_email
+field_name: field_email
+entity_type: profile
+type: email
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

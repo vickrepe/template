@@ -1,0 +1,36 @@
+uuid: 21ab28f6-240d-4f88-9221-a44c5bd5aa9d
+langcode: es
+status: true
+dependencies:
+  module:
+    - options
+    - profile
+id: profile.field_provincia
+field_name: field_provincia
+entity_type: profile
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: Barcelona
+      label: Barcelona
+    -
+      value: Girona
+      label: Girona
+    -
+      value: Tarragona
+      label: Tarragona
+    -
+      value: Mallorca
+      label: Mallorca
+    -
+      value: Ibiza
+      label: Ibiza
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

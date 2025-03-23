@@ -1,0 +1,15 @@
+uuid: 4c7e56d9-0320-4cba-9c17-65a15dae02f0
+langcode: es
+status: true
+dependencies:
+  module:
+    - commerce_tax
+third_party_settings:
+  commerce_tax:
+    taxable_type: services
+id: artemis
+label: Artemis
+traits: {  }
+locked: false
+purchasableEntityType: commerce_product_variation
+orderType: artemis

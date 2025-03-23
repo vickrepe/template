@@ -1,0 +1,9 @@
+uuid: 4c5ebcb9-183a-42b0-ae97-390f8a3158bb
+langcode: es
+status: true
+dependencies: {  }
+id: paises
+label: Países
+category: Assessora
+likert: false
+options: ''

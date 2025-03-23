@@ -1,0 +1,24 @@
+uuid: f96762b3-4663-49cc-9597-830fbc49c3f3
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - artemis_bootstrap
+id: artemis_bootstrap_pagetitle
+theme: artemis_bootstrap
+region: content
+weight: -4
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /test

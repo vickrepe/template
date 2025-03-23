@@ -1,0 +1,7 @@
+adding:
+  dependencies:
+    module:
+      - metatag
+  permissions:
+    - 'administer meta tags'
+removing: {  }

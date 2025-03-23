@@ -1,0 +1,18 @@
+uuid: a42b7d20-edc4-4e86-af24-b1c877da4b49
+langcode: es
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.label_title_texto_two_links
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: paragraph.label_title_texto_two_links
+target_entity_type_id: paragraph
+target_bundle: label_title_texto_two_links
+default_langcode: site_default
+language_alterable: true

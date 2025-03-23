@@ -1,0 +1,16 @@
+adding:
+  dependencies:
+    config:
+      - field.field.node.page.field_meta_tags
+    module:
+      - metatag
+  content:
+    field_meta_tags:
+      type: metatag_firehose
+      weight: 121
+      region: content
+      settings:
+        sidebar: true
+        use_details: true
+      third_party_settings: {  }
+removing: {  }

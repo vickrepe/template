@@ -1,0 +1,29 @@
+uuid: 24dc4d89-89da-4bca-aa5d-16eb4978601e
+langcode: es
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.paquete
+    - field.storage.commerce_product.field_contact_form
+    - node.type.webform
+id: commerce_product.paquete.field_contact_form
+field_name: field_contact_form
+entity_type: commerce_product
+bundle: paquete
+label: 'Formulario de contacto'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      webform: webform
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

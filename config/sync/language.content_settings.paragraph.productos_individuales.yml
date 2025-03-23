@@ -1,0 +1,18 @@
+uuid: 485e7c07-4d59-492b-84bc-6e959bc7476f
+langcode: es
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.productos_individuales
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: paragraph.productos_individuales
+target_entity_type_id: paragraph
+target_bundle: productos_individuales
+default_langcode: site_default
+language_alterable: false

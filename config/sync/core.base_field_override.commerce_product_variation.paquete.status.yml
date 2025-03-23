@@ -1,0 +1,22 @@
+uuid: 72d92d2e-b6d6-4ce2-861a-db65621fa8a1
+langcode: es
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.paquete
+id: commerce_product_variation.paquete.status
+field_name: status
+entity_type: commerce_product_variation
+bundle: paquete
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

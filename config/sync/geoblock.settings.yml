@@ -1,0 +1,12 @@
+langcode: es
+applicable_methods:
+  - CONNECT
+  - DELETE
+  - PATCH
+  - POST
+  - PUT
+data_source: maxmind
+enable_logging: true
+require_domestic_use: false
+restriction_country_codes: {  }
+restriction_type: ''

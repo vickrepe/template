@@ -1,0 +1,117 @@
+uuid: e92db994-6538-4f9a-ad5d-7c4e78b8041d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_content_blocks
+    - node.type.advanced_page
+    - paragraphs.paragraphs_type.block_background_image
+    - paragraphs.paragraphs_type.cards_descripcion
+    - paragraphs.paragraphs_type.dos_columnas_informacion_imagen
+    - paragraphs.paragraphs_type.formulario_imagen
+    - paragraphs.paragraphs_type.iconos_descripcion
+    - paragraphs.paragraphs_type.ilustracion_y_texto
+    - paragraphs.paragraphs_type.label_title_texto_two_links
+    - paragraphs.paragraphs_type.pg_block_view
+    - paragraphs.paragraphs_type.preguntas_frecuentes
+    - paragraphs.paragraphs_type.text_block
+    - paragraphs.paragraphs_type.texto_avanzado
+  module:
+    - entity_reference_revisions
+id: node.advanced_page.field_content_blocks
+field_name: field_content_blocks
+entity_type: node
+bundle: advanced_page
+label: 'Bloques de contenido'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      block_background_image: block_background_image
+      pg_block_view: pg_block_view
+      text_block: text_block
+      cards_descripcion: cards_descripcion
+      dos_columnas_informacion_imagen: dos_columnas_informacion_imagen
+      label_title_texto_two_links: label_title_texto_two_links
+      formulario_imagen: formulario_imagen
+      iconos_descripcion: iconos_descripcion
+      ilustracion_y_texto: ilustracion_y_texto
+      preguntas_frecuentes: preguntas_frecuentes
+      texto_avanzado: texto_avanzado
+    negate: 0
+    target_bundles_drag_drop:
+      block_background_image:
+        weight: -47
+        enabled: true
+      card_servicios:
+        weight: -43
+        enabled: false
+      cards_descripcion:
+        weight: -44
+        enabled: true
+      contacto_traslados:
+        weight: -42
+        enabled: false
+      dos_columnas_informacion_imagen:
+        weight: -41
+        enabled: true
+      formulario_imagen:
+        weight: -39
+        enabled: true
+      icono:
+        weight: -36
+        enabled: false
+      icono_y_texto:
+        weight: -35
+        enabled: false
+      icono_y_texto_largo:
+        weight: -34
+        enabled: false
+      iconos_con_descripcion_larga:
+        weight: -38
+        enabled: false
+      iconos_descripcion:
+        weight: -37
+        enabled: true
+      ilustracion_y_texto:
+        weight: -33
+        enabled: true
+      label_title_texto_two_links:
+        weight: -40
+        enabled: true
+      mapa_con_texto_de_cabecera:
+        weight: -32
+        enabled: false
+      paquetes_de_productos:
+        weight: -31
+        enabled: false
+      pg_block_view:
+        weight: -46
+        enabled: true
+      preguntas_frecuentes:
+        weight: -30
+        enabled: true
+      productos_individuales:
+        weight: -29
+        enabled: false
+      texo_info_con_modal:
+        weight: -26
+        enabled: false
+      text_block:
+        weight: -45
+        enabled: true
+      texto_avanzado:
+        weight: -28
+        enabled: true
+      titulo_con_texto_imagen_link:
+        weight: -27
+        enabled: false
+      titulo_texto_imagen:
+        weight: -25
+        enabled: false
+field_type: entity_reference_revisions

@@ -1,0 +1,11 @@
+--- captcha.inc.orig	2025-01-03 14:35:34.659906005 +0100
++++ captcha.inc	2025-01-03 14:36:48.547909017 +0100
+@@ -225,7 +225,7 @@
+     $captcha_type = \Drupal::config('captcha.settings')
+       ->get('default_challenge', CaptchaConstants::CAPTCHA_MATH_CAPTCHA_TYPE);
+   }
+-  return explode('/', $captcha_type);
++  return explode('/', $captcha_type ?? '');
+ }
+ 
+ /**

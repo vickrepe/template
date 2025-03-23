@@ -1,0 +1,15 @@
+adding:
+  dependencies:
+    config:
+      - field.field.node.advanced_page.field_meta_tags
+    module:
+      - metatag
+  content:
+    field_meta_tags:
+      type: metatag_empty_formatter
+      label: above
+      settings: {  }
+      third_party_settings: {  }
+      weight: 5
+      region: content
+removing: {  }

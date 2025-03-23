@@ -1,0 +1,7 @@
+name: 'Artemis Config'
+type: module
+description: 'Módulo para personalizar configuraciones en Drupal'
+core_version_requirement: ^10
+package: Custom
+dependencies:
+  - drupal:node

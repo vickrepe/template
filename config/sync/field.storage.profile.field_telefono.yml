@@ -1,0 +1,21 @@
+uuid: e6b37033-4723-4d69-891e-038e2bf5f549
+langcode: es
+status: true
+dependencies:
+  module:
+    - profile
+id: profile.field_telefono
+field_name: field_telefono
+entity_type: profile
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

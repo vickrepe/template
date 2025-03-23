@@ -1,0 +1,25 @@
+uuid: 3eceff71-d4e8-4f82-bccd-2b70e36dd53d
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.footer
+  module:
+    - system
+  theme:
+    - artemis_bootstrap
+id: artemis_bootstrap_piedepagina
+theme: artemis_bootstrap
+region: footer_fifth
+weight: -6
+provider: null
+plugin: 'system_menu_block:footer'
+settings:
+  id: 'system_menu_block:footer'
+  label: 'Pie de página'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

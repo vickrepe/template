@@ -1,0 +1,31 @@
+uuid: b15732f4-ec83-4ab4-81a5-fe0390e2c761
+langcode: es
+status: false
+dependencies:
+  module:
+    - commerce_sermepa
+id: '337445118'
+label: '337445118'
+weight: -10
+plugin: commerce_sermepa
+configuration:
+  display_label: 'Tarjeta crédito / débito'
+  mode: test
+  payment_method_types:
+    - 'Tarjeta de crédito'
+  collect_billing_information: true
+  merchant_name: '337445118'
+  merchant_code: '337445118'
+  merchant_group: ''
+  merchant_password: sq7HjrUOBfKmC576ILgskD5srU870gJ7
+  merchant_terminal: '001'
+  merchant_paymethods:
+    C: C
+  merchant_consumer_language: '000'
+  currency: 978
+  transaction_type: '0'
+  instructions:
+    value: ''
+    format: plain_text
+conditions: {  }
+conditionOperator: AND

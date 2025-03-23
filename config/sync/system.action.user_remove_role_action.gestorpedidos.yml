@@ -1,0 +1,14 @@
+uuid: 586a7c99-4e8e-4c6f-9d38-e2d8531cc7c2
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.gestorpedidos
+  module:
+    - user
+id: user_remove_role_action.gestorpedidos
+label: 'Elimina el rol GestorPedidos al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: gestorpedidos

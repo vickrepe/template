@@ -1,0 +1,178 @@
+<?php
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\taxonomy\Entity\Term;
+use Drupal\Core\Url;
+
+
+/**
+ * Implements hook_form_system_theme_settings_alter() for settings form.
+ *
+ * Replace Barrio setting options with subtheme ones.
+ *
+ * Example on how to alter theme settings form
+ */
+function template_bootstrap_form_system_theme_settings_alter(&$form, FormStateInterface $form_state) {
+  $form['components']['navbar']['bootstrap_barrio_navbar_top_background']['#options'] = [
+    'bg-primary' => t('Primary'),
+    'bg-secondary' => t('Secondary'),
+    'bg-light' => t('Light'),
+    'bg-dark' => t('Dark'),
+    'bg-white' => t('White'),
+    'bg-transparent' => t('Transparent'),
+  ];
+  $form['components']['navbar']['bootstrap_barrio_navbar_background']['#options'] = [
+    'bg-primary' => t('Primary'),
+    'bg-secondary' => t('Secondary'),
+    'bg-light' => t('Light'),
+    'bg-dark' => t('Dark'),
+    'bg-white' => t('White'),
+    'bg-transparent' => t('Transparent'),
+  ];
+}
+
+function template_bootstrap_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+    if ($_POST) {
+      $form['#attributes']['class'][] = 'form_was_sent';
+    }
+}
+
+/**
+ * Implements hook_theme_preprocess().
+ */
+function template_bootstrap_preprocess(&$variables) {
+    $language = \Drupal::languageManager()->getCurrentLanguage()->getId();
+    $variables['idioma'] = $language;
+}
+
+/**
+ * Implements hook_theme_suggestions_HOOK_alter() para modificar las sugerencias de plantilla de vistas.
+ */
+function template_bootstrap_theme_suggestions_views_view_alter(array &$suggestions, array $variables) {
+    // Obtén el nombre de la vista.
+    $view_id = $variables['view']->id();
+
+    // Agrega una sugerencia personalizada basada en el nombre de la vista.
+    $suggestions[] = 'views_view__' . $view_id . '__custom_suggestions';
+}
+
+/**
+ * Implements hook_theme_suggestions_HOOK_alter() para modificar las sugerencias de plantilla de vistas.
+ */
+function template_bootstrap_theme_suggestions_views_view_field_alter(array &$suggestions, array $variables) {
+    // Obtén el nombre de la vista.
+    $view_id = $variables['view']->id();
+
+    // Agrega una sugerencia personalizada basada en el nombre de la vista.
+    $suggestions[] = 'views_view_field_' . $variables['field']->field . '__custom_suggestions';
+}
+
+
+/**
+ * Implements hook_preprocess_links__language_block().
+ */
+function template_bootstrap_preprocess_links__language_block(&$variables) {
+  $variables['current_language_code'] = \Drupal::languageManager()->getCurrentLanguage()->getId();
+
+  foreach ($variables['links'] as $i => $link) {
+    $language = \Drupal::languageManager()->getLanguage($i);
+
+    if ($language) {
+      $variables['links'][$i]['link']['#title']  = $language->getName();
+    }
+
+  }
+}
+
+/**
+ * Implements hook_preprocess_breadcrumb().
+ */
+function template_bootstrap_preprocess_breadcrumb(&$variables) {
+  if (!isset($variables['breadcrumb']) || empty($variables['breadcrumb'])) {
+    return;
+  }
+
+  foreach ($variables['breadcrumb'] as $key => &$breadcrumb) {
+    if (empty($breadcrumb['text'])) {
+      unset($variables['breadcrumb'][$key]);
+    }
+  }
+}
+
+/**
+ * Implements hook_preprocess_HOOK().
+ */
+function template_bootstrap_preprocess_node(array &$variables) {
+  $variables['is_front'] = \Drupal::service('path.matcher')->isFrontPage();
+}
+
+/**
+ * Implements hook_preprocess_html().
+ */
+function template_bootstrap_preprocess_html(&$variables) {
+  if (\Drupal::moduleHandler()->moduleExists('eu_cookie_compliance')) {
+    $variables['#attached']['library'][] = 'template_bootstrap/eu-cookie-compliance';
+  }
+}
+
+/**
+ * Implements hook_preprocess_field().
+ */
+function template_bootstrap_preprocess_field(&$variables) {
+  if ($variables['element']['#field_name'] == 'field_title' && isset($variables['element']['#object'])) {
+    $paragraph = $variables['element']['#object'];
+
+    if ($paragraph->bundle() == 'card_servicios') {
+      $hn_value = $paragraph->get('field_card_servicios_selector_hn')->value;
+      $hn_tag = !empty($hn_value) ? $hn_value : '';
+
+      if (!empty($variables['items'][0]['content']['#context']['value']) && !empty($hn_tag)) {
+        $title_value = $variables['items'][0]['content']['#context']['value'];
+
+        $variables['items'][0]['content']['#context']['value'] = [
+          '#type' => 'inline_template',
+          '#template' => "<{$hn_tag}>{{ title }}</{$hn_tag}>",
+          '#context' => ['title' => $title_value],
+        ];
+      }
+    }
+  }
+
+  if ($variables['element']['#field_name'] == 'field_title' && isset($variables['element']['#object'])) {
+    $paragraph = $variables['element']['#object'];
+
+    if ($paragraph->bundle() == 'icono') {
+      $hn_value = $paragraph->get('field_icon_selector_hn')->value;
+      $hn_tag = !empty($hn_value) ? $hn_value : '';
+
+      if (!empty($variables['items'][0]['content']['#context']['value']) && !empty($hn_tag)) {
+        $title_value = $variables['items'][0]['content']['#context']['value'];
+
+        $variables['items'][0]['content']['#context']['value'] = [
+          '#type' => 'inline_template',
+          '#template' => "<{$hn_tag}>{{ title }}</{$hn_tag}>",
+          '#context' => ['title' => $title_value],
+        ];
+      }
+    }
+  }
+
+  if ($variables['element']['#field_name'] == 'field_faq_titulo' && isset($variables['element']['#object'])) {
+    $paragraph = $variables['element']['#object'];
+
+    if ($paragraph->bundle() == 'preguntas_frecuentes') {
+      $hn_value = $paragraph->get('field_faq_selector_hn')->value;
+      $hn_tag = !empty($hn_value) ? $hn_value : '';
+
+      if (!empty($variables['items'][0]['content']['#context']['value']) && !empty($hn_tag)) {
+        $title_value = $variables['items'][0]['content']['#context']['value'];
+
+        $variables['items'][0]['content']['#context']['value'] = [
+          '#type' => 'inline_template',
+          '#template' => "<{$hn_tag}>{{ title }}</{$hn_tag}>",
+          '#context' => ['title' => $title_value],
+        ];
+      }
+    }
+  }
+}
+

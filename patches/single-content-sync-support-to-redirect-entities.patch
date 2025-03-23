@@ -1,0 +1,160 @@
+diff --git a/src/Plugin/SingleContentSyncBaseFieldsProcessor/Redirect.php b/src/Plugin/SingleContentSyncBaseFieldsProcessor/Redirect.php
+new file mode 100644
+index 0000000..6f40331
+--- /dev/null
++++ b/src/Plugin/SingleContentSyncBaseFieldsProcessor/Redirect.php
+@@ -0,0 +1,114 @@
++<?php
++
++namespace Drupal\single_content_sync\Plugin\SingleContentSyncBaseFieldsProcessor;
++
++use Drupal\Core\Entity\EntityRepositoryInterface;
++use Drupal\Core\Entity\EntityTypeManagerInterface;
++use Drupal\Core\Entity\FieldableEntityInterface;
++use Drupal\Core\Plugin\ContainerFactoryPluginInterface;
++use Drupal\link\Plugin\Field\FieldType\LinkItem;
++use Drupal\menu_link_content\MenuLinkContentInterface;
++use Drupal\redirect\Entity\Redirect as EntityRedirect;
++use Drupal\single_content_sync\ContentExporterInterface;
++use Drupal\single_content_sync\ContentImporterInterface;
++use Drupal\single_content_sync\SingleContentSyncBaseFieldsProcessorPluginBase;
++use Symfony\Component\DependencyInjection\ContainerInterface;
++
++/**
++ * Plugin implementation for node base fields processor plugin.
++ *
++ * @SingleContentSyncBaseFieldsProcessor(
++ *   id = "redirect",
++ *   label = @Translation("Redirect content processor"),
++ *   entity_type = "redirect",
++ * )
++ */
++class Redirect extends SingleContentSyncBaseFieldsProcessorPluginBase implements ContainerFactoryPluginInterface {
++
++  /**
++   * The content exporter.
++   *
++   * @var \Drupal\single_content_sync\ContentExporterInterface
++   */
++  protected ContentExporterInterface $exporter;
++
++  /**
++   * The entity repository.
++   *
++   * @var \Drupal\Core\Entity\EntityRepositoryInterface
++   */
++  protected EntityRepositoryInterface $entityRepository;
++
++  /**
++   * The entity type manager.
++   *
++   * @var \Drupal\Core\Entity\EntityTypeManagerInterface
++   */
++  protected EntityTypeManagerInterface $entityTypeManager;
++
++  /**
++   * The content importer.
++   *
++   * @var \Drupal\single_content_sync\ContentImporterInterface
++   */
++  protected ContentImporterInterface $importer;
++
++  /**
++   * {@inheritdoc}
++   */
++  public function __construct(array $configuration, $plugin_id, $plugin_definition, ContentExporterInterface $exporter, EntityRepositoryInterface $entity_repository, EntityTypeManagerInterface $entity_type_manager, ContentImporterInterface $importer) {
++    parent::__construct($configuration, $plugin_id, $plugin_definition);
++
++    $this->exporter = $exporter;
++    $this->entityRepository = $entity_repository;
++    $this->entityTypeManager = $entity_type_manager;
++    $this->importer = $importer;
++  }
++
++  /**
++   * {@inheritdoc}
++   */
++  public static function create(ContainerInterface $container, array $configuration, $plugin_id, $plugin_definition) {
++    return new static(
++      $configuration,
++      $plugin_id,
++      $plugin_definition,
++      $container->get('single_content_sync.exporter'),
++      $container->get('entity.repository'),
++      $container->get('entity_type.manager'),
++      $container->get('single_content_sync.importer')
++    );
++  }
++
++  /**
++   * {@inheritdoc}
++   */
++  public function exportBaseValues(FieldableEntityInterface $entity): array {
++    assert($entity instanceof EntityRedirect);
++
++    $base_fields = [
++      'language' => $entity->language()->getId(),
++      'type' => $entity->get('type')->value,
++      'redirect_source' => $entity->get('redirect_source')->getValue(),
++      'redirect_redirect' => $entity->get('redirect_redirect')->getValue(),
++      'status_code' => $entity->get('status_code')->getValue()
++    ];
++
++    return $base_fields;
++  }
++
++  /**
++   * {@inheritdoc}
++   */
++  public function mapBaseFieldsValues(array $values, FieldableEntityInterface $entity): array {
++    return [
++      'type' => $values['type'],
++      'redirect_source' => $values['redirect_source'],
++      'language' => $values['language'],
++      'redirect_redirect' => $values['redirect_redirect'],
++      'status_code' => $values['status_code']
++    ];
++
++  }
++
++}
+diff --git a/src/Plugin/SingleContentSyncFieldProcessor/RedirectSourceField.php b/src/Plugin/SingleContentSyncFieldProcessor/RedirectSourceField.php
+new file mode 100644
+index 0000000..cb153c3
+--- /dev/null
++++ b/src/Plugin/SingleContentSyncFieldProcessor/RedirectSourceField.php
+@@ -0,0 +1,34 @@
++<?php
++
++namespace Drupal\single_content_sync\Plugin\SingleContentSyncFieldProcessor;
++
++use Drupal\Core\Entity\FieldableEntityInterface;
++use Drupal\Core\Field\FieldItemListInterface;
++use Drupal\single_content_sync\SingleContentSyncFieldProcessorPluginBase;
++
++/**
++ * Plugin implementation of the simple field processor plugin.
++ *
++ * @SingleContentSyncFieldProcessor(
++ *   id = "redirect_source",
++ *   label = @Translation("Redirect source field processor"),
++ *   field_type = "redirect_source",
++ * )
++ */
++class RedirectSourceField extends SingleContentSyncFieldProcessorPluginBase {
++
++  /**
++   * {@inheritdoc}
++   */
++  public function exportFieldValue(FieldItemListInterface $field): array {
++    return $field->getValue();
++  }
++
++  /**
++   * {@inheritdoc}
++   */
++  public function importFieldValue(FieldableEntityInterface $entity, string $fieldName, array $value): void {
++    $entity->set($fieldName, $value);
++  }
++
++}

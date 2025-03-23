@@ -1,0 +1,18 @@
+uuid: 60f02a0e-de1f-4ff6-9124-578c4f33f9b1
+langcode: es
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.contacto_traslados
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: paragraph.contacto_traslados
+target_entity_type_id: paragraph
+target_bundle: contacto_traslados
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,9 @@
+uuid: cd04bb58-1920-4dfa-bccc-2164a52d5d38
+langcode: es
+status: true
+dependencies: {  }
+id: poblaciones
+label: Poblaciones
+category: Assessora
+likert: false
+options: ''

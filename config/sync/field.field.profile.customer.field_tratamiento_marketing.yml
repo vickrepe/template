@@ -1,0 +1,23 @@
+uuid: a8a584ed-7f48-4482-8d5b-e2da733f852f
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_tratamiento_marketing
+    - profile.type.customer
+id: profile.customer.field_tratamiento_marketing
+field_name: field_tratamiento_marketing
+entity_type: profile
+bundle: customer
+label: 'Tratamiento marketing'
+description: 'Autorizo a que trate mis datos personales con fines de marketing para comunicarme servicios, productos y novedades de la compañía y otras noticias que puedan ser de mi interés por cualquier medio, incluidos medios electrónicos.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

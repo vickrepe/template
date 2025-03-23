@@ -1,0 +1,18 @@
+uuid: 0bbecd20-4257-4f30-9ad9-82c462b78355
+langcode: es
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.paquete
+id: commerce_product_variation.paquete.changed
+field_name: changed
+entity_type: commerce_product_variation
+bundle: paquete
+label: Modificado
+description: 'La fecha en la que la variación se modificó por última vez.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

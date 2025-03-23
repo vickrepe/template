@@ -1,0 +1,45 @@
+display:
+  default:
+    display_title: Mestre
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Aplica
+          reset_button_label: Reinicialitza
+          exposed_sorts_label: 'Ordena per'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Elements per pàgina'
+            items_per_page_options_all_label: '- Tot -'
+            offset_label: Desplaçament
+          tags:
+            previous: ‹‹
+            next: ››
+      fields:
+        uid:
+          label: "ID d'usuari de Drupal"
+          format_plural_string: !!binary MQNAY291bnQ=
+        name:
+          separator: ', '
+        delete_link:
+          label: suprimeix
+          text: suprimeix
+      filters:
+        authname:
+          expose:
+            label: "Nom d'autenticació"
+        uid:
+          expose:
+            label: 'Usuari de Drupal'
+      arguments:
+        provider_field:
+          exception:
+            title: Tot
+  page:
+    display_title: Pàgina
+    display_options:
+      menu:
+        title: Extern

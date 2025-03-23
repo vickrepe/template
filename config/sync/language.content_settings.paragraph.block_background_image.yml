@@ -1,0 +1,18 @@
+uuid: 1ba509a0-4aea-4391-9f35-d6b178e09aac
+langcode: es
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.block_background_image
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: paragraph.block_background_image
+target_entity_type_id: paragraph
+target_bundle: block_background_image
+default_langcode: site_default
+language_alterable: true

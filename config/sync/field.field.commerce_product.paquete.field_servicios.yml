@@ -1,0 +1,46 @@
+uuid: 66e03ec4-3773-4bff-abe4-a0b1dd50d00e
+langcode: es
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.paquete
+    - field.storage.commerce_product.field_servicios
+    - paragraphs.paragraphs_type.texo_info_con_modal
+  module:
+    - entity_reference_revisions
+id: commerce_product.paquete.field_servicios
+field_name: field_servicios
+entity_type: commerce_product
+bundle: paquete
+label: 'Lo que incluye (servicios)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      texo_info_con_modal: texo_info_con_modal
+    negate: 0
+    target_bundles_drag_drop:
+      icono:
+        weight: 7
+        enabled: false
+      icono_y_texto:
+        weight: 9
+        enabled: false
+      iconos_descripcion:
+        weight: 8
+        enabled: false
+      ilustracion_y_texto:
+        weight: 10
+        enabled: false
+      texo_info_con_modal:
+        weight: 11
+        enabled: true
+      titulo_con_texto_imagen_link:
+        weight: 12
+        enabled: false
+field_type: entity_reference_revisions

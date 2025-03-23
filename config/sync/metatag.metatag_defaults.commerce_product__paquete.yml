@@ -1,0 +1,8 @@
+uuid: 8f134506-bb61-43b7-ad5e-a44e4d727455
+langcode: es
+status: true
+dependencies: {  }
+id: commerce_product__paquete
+label: 'Producto: Paquete'
+tags:
+  robots: noindex

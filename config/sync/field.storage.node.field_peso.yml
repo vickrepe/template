@@ -1,0 +1,20 @@
+uuid: a9a02653-d92d-46ba-8ce0-856d4dc91e81
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+    - weight
+id: node.field_peso
+field_name: field_peso
+entity_type: node
+type: weight
+settings:
+  unsigned: false
+module: weight
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

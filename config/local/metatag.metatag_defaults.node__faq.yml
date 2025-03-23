@@ -1,0 +1,8 @@
+uuid: a4b978e6-e667-4a9a-bd37-6b2d5d3dfae3
+langcode: es
+status: true
+dependencies: {  }
+id: node__faq
+label: 'Content: Pregunta frecuente'
+tags:
+  robots: 'noindex, nofollow'

@@ -1,0 +1,19 @@
+uuid: 0776cc30-5636-475c-ac4b-925dd21943f0
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_telefono
+    - profile.type.customer
+id: profile.customer.field_telefono
+field_name: field_telefono
+entity_type: profile
+bundle: customer
+label: 'Teléfono de contacto'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

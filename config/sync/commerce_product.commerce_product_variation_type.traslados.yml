@@ -1,0 +1,10 @@
+uuid: 63eb610a-7e3f-4ec2-a86f-765659ffd494
+langcode: es
+status: true
+dependencies: {  }
+id: traslados
+label: Traslados
+traits: {  }
+locked: false
+orderItemType: artemis
+generateTitle: false

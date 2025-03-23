@@ -1,0 +1,8 @@
+elements: ''
+settings:
+  confirmation_message: '<h2>Gracias por contactarnos.</h2><p>Hemos recibido correctamente tu consulta.</p><p>Nos pondremos en contacto contigo en la mayor brevedad posible. Si necesitas asistencia inmediata, puedes llamarnos al <strong>900 000 000 </strong>y nuestro equipo de asesores te atenderá personalmente.</p>'
+handlers:
+  email_confirmation:
+    settings: {  }
+  email_notification:
+    settings: {  }

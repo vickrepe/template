@@ -1,0 +1,21 @@
+uuid: 3c1c25ce-74cb-40ad-a838-c0cc8db120db
+langcode: es
+status: true
+dependencies:
+  module:
+    - commerce_product
+id: commerce_product.field_etiqueta
+field_name: field_etiqueta
+entity_type: commerce_product
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

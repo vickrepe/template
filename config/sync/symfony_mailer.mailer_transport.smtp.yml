@@ -1,0 +1,18 @@
+uuid: 41475d51-05e2-46b5-b34a-8d520f3c70bb
+langcode: es
+status: true
+dependencies: {  }
+id: smtp
+label: SMTP
+plugin: smtp
+configuration:
+  user: no_reply@stelaeservices.com
+  pass: EYF95paR
+  host: smtp.office365.com
+  port: 587
+  query:
+    verify_peer: true
+    local_domain: ''
+    restart_threshold: null
+    restart_threshold_sleep: null
+    ping_threshold: null

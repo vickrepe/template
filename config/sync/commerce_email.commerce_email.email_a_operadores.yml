@@ -1,0 +1,21 @@
+uuid: fdb79a9e-fd9e-4fa3-92b5-3a0637d1d53c
+langcode: es
+status: false
+dependencies: {  }
+id: email_a_operadores
+label: 'Email a operadores'
+from: no_reply1@test.com
+toType: email
+to: no_reply1@test.com
+toRole: ''
+cc: ''
+bcc: ''
+replyTo: null
+subject: 'Nuevo pedido recibido'
+body: "Recibido pedido con el número [commerce_order:order_number]  <br>\r\n <br>\r\nInformación del pago:  <br>\r\n <br>\r\nNombre: [commerce_order:billing_profile:entity:field_nombre] <br>\r\nApellidos: [commerce_order:billing_profile:entity:field_apellidos] <br>\r\nEmail: [commerce_order:billing_profile:entity:field_email] <br>\r\nTeléfono: [commerce_order:billing_profile:entity:field_telefono] <br>\r\nDefunción: [commerce_order:billing_profile:entity:field_defuncion] <br>\r\n <br>\r\nImporte pagado: [commerce_order:total_paid]  <br>\r\nUrl pedido: [commerce_order:admin-url]  <br>\r\n  <br>\r\nDatos del pedido: <br>\r\nDs_MerchantCode: \r\n[commerce_order:field_ds_merchantcode] <br>\r\nDs_Order: \r\n[commerce_order:field_ds_order] <br>\r\nDs_Terminal: \r\n[commerce_order:field_ds_terminal] <br>\r\nDs_AutorisationCode: \r\n[commerce_order:field_ds_authorisationcode] <br>\r\n <br>\r\nMuchas gracias. Un saludo"
+conditions: {  }
+conditionOperator: AND
+queue: false
+logToEntity: null
+event: order_paid
+targetEntityType: commerce_order

@@ -1,0 +1,18 @@
+uuid: 437f66ec-d5c5-4ac3-b1e3-debdbc268e4e
+langcode: es
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.dos_columnas_informacion_imagen
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: paragraph.dos_columnas_informacion_imagen
+target_entity_type_id: paragraph
+target_bundle: dos_columnas_informacion_imagen
+default_langcode: site_default
+language_alterable: true

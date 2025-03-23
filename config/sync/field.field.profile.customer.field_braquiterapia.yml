@@ -1,0 +1,23 @@
+uuid: 1388edfa-b62d-44a8-b704-77ea9c4a0942
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_braquiterapia
+    - profile.type.customer
+id: profile.customer.field_braquiterapia
+field_name: field_braquiterapia
+entity_type: profile
+bundle: customer
+label: '*Confirmo que el difunto no ha realizado tratamiento de braquiterapia en los últimos 6 meses.'
+description: 'En caso de haber recibido tratamiento de braquiterapia, <a href="/contacto">contáctanos</a>.'
+required: true
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

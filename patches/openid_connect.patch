@@ -1,0 +1,37 @@
+--- openid_connect.module	2022-10-14 02:12:17.000000000 +0200
++++ openid_connect_modified.module	2024-03-15 11:52:19.502994919 +0100
+@@ -82,13 +82,13 @@
+ /**
+  * Implements hook_form_FORM_ID_alter() for user_form.
+  */
+-function openid_connect_form_user_form_alter(&$form, &$form_state) {
++function openid_connect_form_user_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state) {
+   // Whether the current user is allowed to change its password.
+   if (\Drupal::service('openid_connect.openid_connect')->hasSetPasswordAccess()) {
+     return;
+   }
+ 
+-  $account_form = isset($form['account']) ? (&$form['account']) : (&$form);
++  $account_form = isset($form['account']) ? $form['account'] : $form;
+ 
+   $account_form['current_pass']['#access'] = FALSE;
+   $account_form['current_pass_required_values']['#value'] = [];
+@@ -99,8 +99,8 @@
+ /**
+  * Implements hook_form_FORM_ID_alter() for user_profile_form.
+  */
+-function openid_connect_form_user_profile_form_alter(&$form, &$form_state) {
+-  $account_form = isset($form['account']) ? (&$form['account']) : (&$form);
++function openid_connect_form_user_profile_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state) {
++  $account_form = isset($form['account']) ? $form['account'] : $form;
+ 
+   $account = \Drupal::currentUser();
+   if (!empty($account_form['pass']['#access']) && !\Drupal::service('openid_connect.openid_connect')->hasSetPasswordAccess($account)) {
+@@ -110,6 +110,7 @@
+   }
+ }
+ 
++
+ /**
+  * Implements hook_form_FORM_ID_alter().
+  */

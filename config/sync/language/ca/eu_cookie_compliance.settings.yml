@@ -1,0 +1,6 @@
+popup_info:
+  value: "<h2><strong>Sobre les cookies en aquest lloc web</strong></h2><p>Utilitzem cookies per recopilar i analitzar informació sobre el rendiment i l’ús del lloc web, per proporcionar funcionalitats relacionades amb les xarxes socials i per millorar i personalitzar el contingut i els anuncis segons les vostres preferències, sobre la base d'un perfil elaborat a partir dels vostres hàbits de navegació (per exemple, pàgines visitades).</p>"
+  format: full_html
+popup_agree_button_message: ' Permetre tot'
+popup_more_info_button_message: 'Més informació'
+disagree_button_label: 'Denegar totes'

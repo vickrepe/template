@@ -1,0 +1,11 @@
+uuid: c5d91741-11af-4565-931b-0b0416e7bcc8
+langcode: es
+status: true
+dependencies:
+  module:
+    - commerce_product
+id: commerce_product.cards
+label: Cards
+description: 'Modo de vista para la creación de cards'
+targetEntityType: commerce_product
+cache: true

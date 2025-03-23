@@ -1,0 +1,21 @@
+uuid: 64a07f55-27ad-49b5-85ee-00f312073c4d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_provincia
+    - profile.type.customer
+  module:
+    - options
+id: profile.customer.field_provincia
+field_name: field_provincia
+entity_type: profile
+bundle: customer
+label: 'Provincia de defunción'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

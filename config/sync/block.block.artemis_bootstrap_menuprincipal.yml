@@ -1,0 +1,25 @@
+uuid: 27dfd214-5a42-4bfd-abd0-353c3f85bb74
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.menu-principal
+  module:
+    - system
+  theme:
+    - artemis_bootstrap
+id: artemis_bootstrap_menuprincipal
+theme: artemis_bootstrap
+region: primary_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:menu-principal'
+settings:
+  id: 'system_menu_block:menu-principal'
+  label: 'Menú principal'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

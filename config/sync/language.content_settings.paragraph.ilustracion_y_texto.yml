@@ -1,0 +1,18 @@
+uuid: 4f903c9f-f178-4c2a-8983-dbef645109a2
+langcode: es
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.ilustracion_y_texto
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: paragraph.ilustracion_y_texto
+target_entity_type_id: paragraph
+target_bundle: ilustracion_y_texto
+default_langcode: site_default
+language_alterable: true

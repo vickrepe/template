@@ -1,0 +1,23 @@
+uuid: 79ce37a3-b3a8-4495-a48d-dfb85bd946d0
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_privacidad
+    - profile.type.customer
+id: profile.customer.field_privacidad
+field_name: field_privacidad
+entity_type: profile
+bundle: customer
+label: '*Privacidad'
+description: 'He leído y acepto la información sobre Protección de datos y Política de privacidad.'
+required: true
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

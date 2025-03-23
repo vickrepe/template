@@ -1,0 +1,13 @@
+uuid: 43541b9b-dd75-4795-8d35-b517cd899d5b
+langcode: es
+status: true
+dependencies:
+  module:
+    - commerce_product
+_core:
+  default_config_hash: ry5RvX-mOnp2GQWzMqSYjPz-jKfP1nSo4Xo4kJCodlE
+id: commerce_product_attribute_value.add_to_cart
+label: 'Formulario de Añadir al Carrito'
+description: ''
+targetEntityType: commerce_product_attribute_value
+cache: true
